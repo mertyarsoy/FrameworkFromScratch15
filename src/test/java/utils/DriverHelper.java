@@ -22,7 +22,7 @@ public class DriverHelper {
 
     public static WebDriver getDriver() {
         if (driver == null || ((RemoteWebDriver) driver).getSessionId() == null) {
-//            String browser = "chrome";
+//         String browser = "chrome";
             switch(ConfigReader.readProperty("QA_browser")) {
 
                 case "chrome":
